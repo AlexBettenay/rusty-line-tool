@@ -69,9 +69,9 @@ fn main() {
             .expect("Failed to read line");
 
         match input.trim() { //example of the match function
-            "1" => function1(),
-            "2" => function2(),
-            "3" => function3(),
+            "1" => two_points_equation(),
+            "2" => find_intersection_from_equations(),
+            "3" => find_intersection_from_coordinates(),
             "4" => panic!("the Disco"), //call panic to exit the program to show an example of Panic
                                         //Panic! at the disco. get it? lol
             _   => println!("Invalid option"),
@@ -79,7 +79,7 @@ fn main() {
     }
 }
 
-fn function1() {
+fn two_points_equation() {
 
     let mut points = Vec::new();
 
@@ -119,7 +119,7 @@ fn function1() {
 
 }
 
-fn function2() {
+fn find_intersection_from_equations() {
     let mut equations = Vec::new();
 
     for i in 1..=2 {
@@ -171,7 +171,7 @@ fn function2() {
     }
 }
 
-fn function3() {
+fn find_intersection_from_coordinates() {
 
     //accept input of 4 sets of
     let mut points = Vec::new();
