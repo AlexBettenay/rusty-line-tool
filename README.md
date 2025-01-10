@@ -1,4 +1,5 @@
-# Line Tool in Rust
+# Rusty Line Tool
+Created as a University project in 2022
 
 ## Overview
 
